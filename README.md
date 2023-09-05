@@ -3,6 +3,6 @@
 
 ## Day 1 - Inception of open-source EDA,Openlane and Sky130 PDK
 <details>
-<summary></summary>
+<summary>SoC Design and Openlane</summary>
   
 </details>
