@@ -7,6 +7,9 @@
 ## Day 1 - Inception of open-source EDA,Openlane and Sky130 PDK
 <details>
 <summary>Installation of Openlane</summary>
+  
+OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, KLayout and a number of custom scripts for design exploration and optimization. It also provides a number of custom scripts for design exploration and optimization.  
+
 Before installing Openlane, we should first install its dependencies:
   
 ```
