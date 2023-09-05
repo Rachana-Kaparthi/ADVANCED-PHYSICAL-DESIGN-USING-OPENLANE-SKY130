@@ -55,13 +55,30 @@ sudo reboot
 # After reboot
 docker run hello-world
 ```
-Now download oOenlane from Github:
+Now download Openlane from Github:
 ```
 git clone --depth 1 https://github.com/The-OpenROAD-Project/OpenLane.git
 cd OpenLane/
 make
 make test
 ```
+
+**Installation of OpenSTA:**  
+
+Use the following commands to checkout the git repository and build the OpenSTA library and excutable.
+```
+#installing dependencies for OpenSTA
+sudo apt-get install cmake clang gcc tcl swig bison flex
+
+#installing OpenSTA
+git clone https://github.com/The-OpenROAD-Project/OpenSTA.git
+cd OpenSTA
+mkdir build
+cd build
+cmake ..
+make
+```
+
 
 
   
