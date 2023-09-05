@@ -1,6 +1,8 @@
 # ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130
 [Day 1- Inception of open-source EDA,Openlane and Sky130 PDK](#day-1---inception-of-open-source-edaopenlane-and-sky130-pdk)
+
 [References](#references)
+
 
 ## Day 1 - Inception of open-source EDA,Openlane and Sky130 PDK
 <details>
@@ -66,7 +68,7 @@ make test
   
 </details>
 
-# References
+## References
 1. https://openlane.readthedocs.io/en/latest/
 2. 
 
