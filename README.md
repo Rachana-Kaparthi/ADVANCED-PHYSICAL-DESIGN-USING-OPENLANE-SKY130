@@ -153,10 +153,16 @@ Below figure demonstrates the Openlane ASIC flow-
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/openlane_asic_flow.png)  
 
  Below is a summarized breakdown of the stages seen in the figure:  
+ 
  A. RTL Synthesis and STA -The design is synthesized into a gate-level netlist using yosys and static timing analysis is performed on the resulting netlist using OpenSTA.  
+ 
  B. Insertion of DFT structures -An open-source Design For Testability (DFT) toolchain, Fault, can optionally be used to modify the netlist, inserting scan chains and the necessary IO ports to scan and test the design after fabrication.  
- C. Physical Implementation -Most of the tools in this stage are used from within the OpenROAD application in combination with other tools, some of them are custom and based on the OpenDB infrastructure,while others are indpendent. 
- D. Post-routing Evaluation of Results -DRC and LVS are then performed using magic and netgen .Antenna checking is performed by either OpenROAD’s ARC (Antenna Rule Checker) or using magic.
+ 
+ C. Physical Implementation -Most of the tools in this stage are used from within the OpenROAD application in combination with other tools, some of them are custom and based on the OpenDB infrastructure,while others are indpendent.  
+ 
+  D. Post-routing Evaluation of Results -DRC and LVS are then performed using magic and netgen .Antenna checking is performed by either OpenROAD’s ARC (Antenna Rule Checker) or using magic.  
+  
+**Open-Source EDA Tools**  
 
   
 </details>
