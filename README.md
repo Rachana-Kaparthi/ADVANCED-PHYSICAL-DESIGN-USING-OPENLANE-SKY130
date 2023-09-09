@@ -189,6 +189,13 @@ package require openlane 0.9
 prep -design picorv32a
 run_synthesis
 ```
+After we run synthesis command, new folder named 'runs' will be created in the picorv32a directory where we find the simulation results, logs etc related to picorv32a synthesis.
+Netlist of picorv32 can be seen here-  
+```
+cd /home/rachana/OpenLane/designs/picorv32a/runs/RUN_2023.09.09_15.50.10/results/synthesis
+gedit picorv32a.v
+```
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/picorv32a_netlist.png)  
 
   
 </details>
