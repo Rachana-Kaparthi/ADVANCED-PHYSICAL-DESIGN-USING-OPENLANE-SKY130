@@ -137,15 +137,22 @@ This includes physical and Timing verifications.
 - *Timing verifications:*
   - *Static Timing Analysis (STA):*
     - Analyze the timing characteristics of your design to ensure that all setup and hold time requirements are met. OpenSTA is commonly used in the OpenLane flow for STA.
-**Opensource ASIC flow**
+      
+**Opensource ASIC flow**  
+
 The OpenLANE flow utilizes tools mainly from the OpenROAD, YosysHQ, and Open Circuit Design projects. The way those tools are used, augmented by a number of other custom tools and scripts, defines the methodology of the flow.
-OpenLANE supports two main use cases.
+OpenLANE supports two main use cases-  
+
 - First, It can be used to harden designs from their RTL HDL models obtaining what we will refer to as soft macros
 - The second use case is integrating macros into a complete chip.
+  
 To demonstrate its capabilities, OpenLANE has been used to successfully tape out a family of RISC-V based SoCs called striVe.
 
-![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/openlane_asic_flow.png)
- Below is a summarized breakdown of thestages seen in the figure:  
+Below figure demonstrates the Openlane ASIC flow-  
+
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/openlane_asic_flow.png)  
+
+ Below is a summarized breakdown of the stages seen in the figure:  
  A. RTL Synthesis and STA -The design is synthesized into a gate-level netlist using yosys and static timing analysis is performed on the resulting netlist using OpenSTA.  
  B. Insertion of DFT structures -An open-source Design For Testability (DFT) toolchain, Fault, can optionally be used to modify the netlist, inserting scan chains and the necessary IO ports to scan and test the design after fabrication.  
  C. Physical Implementation -Most of the tools in this stage are used from within the OpenROAD application in combination with other tools, some of them are custom and based on the OpenDB infrastructure,while others are indpendent. 
