@@ -129,7 +129,7 @@ Detailed Routing: Uses the routing guides to implement the actual wiring
 This includes physical and Timing verifications.
 *Physical verifications:*  
 
-Design Rule Checking (DRC):
+*Design Rule Checking (DRC):*
 
 Verify that the chip layout adheres to the manufacturing process's design rules. DRC tools like Magic or KLayout are commonly used for this purpose.
 Layout vs. Schematic (LVS) Check:
@@ -138,7 +138,7 @@ Ensure that the final layout matches the original schematic. LVS tools like Netg
 
 *Timing verifications:*
 
-Static Timing Analysis (STA):
+*Static Timing Analysis (STA):*
 
 Analyze the timing characteristics of your design to ensure that all setup and hold time requirements are met. OpenSTA is commonly used in the OpenLane flow for STA.
 
