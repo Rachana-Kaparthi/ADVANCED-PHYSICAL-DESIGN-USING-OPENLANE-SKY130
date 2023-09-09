@@ -82,10 +82,12 @@ make
 </details>
 <details>
 <summary>SoC Design and Openlane</summary>
-Application Specific Integrated Circuit(ASIC) consists of 3 main parts:
-  -RTL IP's  
-  -EDA Tools  
-  -PDK Data  
+Application Specific Integrated Circuit(ASIC) consists of 3 main parts:  
+  
+  - RTL IP's
+  - EDA Tools
+  - PDK Data  
+  
 In short, it can be implemented as below:  
   
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/asic_elements.png)
