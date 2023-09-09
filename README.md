@@ -61,6 +61,8 @@ git clone --depth 1 https://github.com/The-OpenROAD-Project/OpenLane.git
 cd OpenLane/
 make
 make test
+cd /home/rachana/OpenLane/designs/ci
+cp -r * ../
 ```
 
 **Installation of OpenSTA:**  
@@ -163,6 +165,30 @@ Below figure demonstrates the Openlane ASIC flow-
   D. Post-routing Evaluation of Results -DRC and LVS are then performed using magic and netgen .Antenna checking is performed by either OpenROAD’s ARC (Antenna Rule Checker) or using magic.  
   
 **Open-Source EDA Tools**  
+
+OpenLANE utilises a variety of opensource tools in the execution of the ASIC flow:
+Task | Tools
+------------- | -------------
+RTL Synthesis & Technology Mapping | [yosys](https://github.com/YosysHQ/yosys), abc
+Floorplan & PDN | init_fp, ioPlacer, pdn and tapcell
+Placement | RePLace, Resizer, OpenPhySyn & OpenDP
+Static Timing Analysis | [OpenSTA](https://github.com/The-OpenROAD-Project/OpenSTA)
+Clock Tree Synthesis | [TritonCTS](https://github.com/The-OpenROAD-Project/OpenLane)
+Routing | FastRoute and [TritonRoute](https://github.com/The-OpenROAD-Project/TritonRoute) 
+SPEF Extraction | [SPEF-Extractor](https://github.com/HanyMoussa/SPEF_EXTRACTOR)
+DRC Checks, GDSII Streaming out | [Magic](https://github.com/RTimothyEdwards/magic), [Klayout](https://github.com/KLayout/klayout)
+LVS check | [Netgen](https://github.com/RTimothyEdwards/netgen)
+Circuit validity checker | [CVC](https://github.com/d-m-bailey/cvc) 
+
+**Steps to synthesis in OpenLane:**  
+```
+cd ~/OpenLane
+make mount
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+run_synthesis
+```
 
   
 </details>
