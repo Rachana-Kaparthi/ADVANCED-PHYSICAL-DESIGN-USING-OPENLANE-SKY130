@@ -136,12 +136,23 @@ This includes physical and Timing verifications.
 - *Timing verifications:*
   - *Static Timing Analysis (STA):*
     - Analyze the timing characteristics of your design to ensure that all setup and hold time requirements are met. OpenSTA is commonly used in the OpenLane flow for STA.
+**Opensource ASIC flow**
+The OpenLANE flow utilizes tools mainly from the OpenROAD, YosysHQ, and Open Circuit Design projects. The way those tools are used, augmented by a number of other custom tools and scripts, defines the methodology of the flow.
+OpenLANE supports two main use cases.
+- First, It can be used to harden designs from their RTL HDL models obtaining what we will refer to as soft macros
+- The second use case is integrating macros into a complete chip.
+To demonstrate its capabilities, OpenLANE has been used to successfully tape out a family of RISC-V based SoCs called striVe.
+
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/openlane_asic_flow.png)
+As shown in the figure the first step of the design sarts with feeding the RTL synthesis to Yosys
 
   
 </details>
 
 ## References
 1. https://openlane.readthedocs.io/en/latest/
-2. 
+2. https://woset-workshop.github.io/PDFs/2020/a21.pdf
+3. https://github.com/Devipriya1921/Physical_Design_Using_OpenLANE_Sky130#components-of-opensource-digital-asic-design
+4. 
 
 
