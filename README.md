@@ -295,8 +295,10 @@ Flop ratio = (No.of D flipflops)/(Total no.of cells) =1596/10104 = 0.1579
 <details>
   <summary>Chip Floor Planning considerations  </summary>  
   Two parameters are of importance when it comes to floorplanning namely, Utilisation Factor and Aspect Ratio. 
+  
 *Utilisation Factor:*  
- - The ratio of area occupied by the cells in the netlist to the total area of the core  
+
+ - The ratio of area occupied by the cells in the netlist to the total area of the core
  - It is better to have a utilization Factor of 0.5 to 0.6 to accomodate any extra logic later on.  
  
   
