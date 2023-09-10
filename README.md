@@ -213,6 +213,8 @@ package require openlane 0.9
 prep -design picorv32a
 run_synthesis
 ```
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/run_synthesis.png)  
+
 After we run synthesis command, new folder named 'runs' will be created in the picorv32a directory where we find the simulation results, logs etc related to picorv32a synthesis.
 Netlist of picorv32 can be seen here-  
 ```
@@ -360,6 +362,25 @@ The netlist defines connectivity between logic gates. The place between the core
 </details>
 <details>
   <summary>Floorplan run on OpenLANE & view of the layout in Magic</summary>  
+ 
+* Floorplan envrionment variables or switches:
+
+1. ```FP_CORE_UTIL``` - floorplan core utilisation
+2. ```FP_ASPECT_RATIO``` - floorplan aspect ratio
+3. ```FP_CORE_MARGIN``` - Core to die margin area
+4. ```FP_IO_MODE``` - defines pin configurations (1 = equidistant/0 = not equidistant)
+5. ```FP_CORE_VMETAL``` - vertical metal layer
+6. ```FP_CORE_HMETAL``` - horizontal metal layer
+   
+***Note: Usually, vertical metal layer and horizontal metal layer values will be 1 more than that specified in the files***
+ 
+ To run the picorv32a floorplan in openLANE:
+ ```
+ run_floorplan
+ 
+ ```
+ ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/run_floorplan.png)  
+ 
   
 </details>
 
