@@ -189,7 +189,8 @@ Below figure demonstrates the Openlane ASIC flow-
   D. Post-routing Evaluation of Results -DRC and LVS are then performed using magic and netgen .Antenna checking is performed by either OpenROAD’s ARC (Antenna Rule Checker) or using magic.  
  </details>  
  
-<details>Open-Source EDA Tools**  
+<details>
+  <summary>Open-Source EDA Tools</summary>
 
 OpenLANE utilises a variety of opensource tools in the execution of the ASIC flow:
 Task | Tools
