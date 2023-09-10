@@ -393,12 +393,24 @@ To view the floorplan, Magic is invoked after moving to the results/floorplan di
 magic -T /home/rachana/open_pdks/sky130/magic/sky130.tech lef read ../../tmp/merged.min.lef def read picorv32.def &
 ```
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/magic_output.png)  
+
 One can zoom into Magic layout by selecting an area with left and right mouse clcik followed by pressing "z" key.  
-Various components can be identified by using the ```what``` command in tkcon window after making a selection on the component:
+Various components can be identified by using the ```what``` command in tkcon window after making a selection on the component
 Zooming in also provides a view of decaps present in picorv32a chip:
 ![image](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/assets/140998470/0a807d5a-4919-4801-8ce8-10d82277aed6)
+ 
+</details>  
+<details>
+  <summary>Library Binding and Placement</summary>  
+  
+**Placement Optimization**
 
+The next step in the OpenLANE ASIC flow is placement. The synthesized netlist is the be placed on the floorplan. Placement is perfomed in 2 stages:
 
+1. Global Placement: It finds optimal position for all cells which may not be legal and cells may overlap. Optimization is done through reduction of half parameter wire length
+2. Detailed Placement: It alters the position of cells post global placement so as to legalise them
+
+Legalisation of cells is important from timing point of view. 
   
 </details>
 
