@@ -86,7 +86,7 @@ make
 ```
 
 **Magic**  
-Use the below commands for installing Magic-  
+Use the below commands for installing Magic.  
 
 ```
 sudo apt-get install m4
