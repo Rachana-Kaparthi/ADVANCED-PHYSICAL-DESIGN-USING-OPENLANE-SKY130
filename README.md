@@ -192,7 +192,8 @@ Below figure demonstrates the Openlane ASIC flow-
 <details>
   <summary>Open-Source EDA Tools</summary>
 
-OpenLANE utilises a variety of opensource tools in the execution of the ASIC flow:
+OpenLANE utilises a variety of opensource tools in the execution of the ASIC flow:  
+
 Task | Tools
 ------------- | -------------
 RTL Synthesis & Technology Mapping | [yosys](https://github.com/YosysHQ/yosys), abc
@@ -445,6 +446,46 @@ Standard cell design flow involves the following:
 1. Inputs: PDKs, DRC & LVS rules, SPICE models, libraries, user-defined specifications 
 2. Design steps: Circuit design, Layout design (Art of layout Euler's path and stick diagram), Extraction of parasitics, Characterization (timing, noise, power)
 3. Outputs: CDL (circuit description language), LEF, GDSII, extracted SPICE netlist (.cir), timing, noise and power .lib files
+
+*Standard Cell Characterization Flow*
+
+Characterization refers to the process of gathering and analyzing electrical and performance data for a specific cell or library element. The goal of characterization is to provide accurate and comprehensive information about how the cell behaves under various operating conditions. This information is essential for designing and optimizing digital circuits using these cells.  
+
+A typical standard cell characterization flow includes the following steps:
+1. Read in the models and tech files
+2. Read extracted spice netlist
+3. Recognise behaviour of the cell
+4. Read the subcircuits
+5. Attach power sources
+6. Apply stimulus to characterization setup
+7. Provide necessary output capacitance loads
+8. Provide necessary simulation commands
+he opensource software called GUNA can be used for characterization. Steps 1-8 are fed into the GUNA software which generates timing, noise and power models.
+
+*Timing threshold Definitions*
+
+Timing defintion | Value
+------------ | -------------
+slew_low_rise_thr  | 20% value
+slew_high_rise_thr |  80% value
+slew_low_fall_thr | 20% value
+slew_high_fall_thr | 80% value
+in_rise_thr | 50% value
+in_fall_thr | 50% value
+out_rise_thr | 50% value
+out_fall_thr | 50% value
+
+
+```
+rise delay =  time(out_fall_thr) - time(in_rise_thr)
+
+Fall transition time: time(slew_high_fall_thr) - time(slew_low_fall_thr)
+
+Rise transition time: time(slew_high_rise_thr) - time(slew_low_rise_thr)
+```
+
+A poor choice of threshold points leads to neative delay value. Therefore a correct choice of thresholds is very important  
+
 
 </details>
 
