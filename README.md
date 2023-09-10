@@ -411,6 +411,25 @@ The next step in the OpenLANE ASIC flow is placement. The synthesized netlist is
 2. Detailed Placement: It alters the position of cells post global placement so as to legalise them
 
 Legalisation of cells is important from timing point of view. 
+
+*Placement run on OpenLANE & view in Magic*
+
+Congestion aware placement using RePIAce:
+```
+run_placement
+
+```
+
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/placement.png)   
+
+The objective of placement is the convergence of overflow value. If overflow value progressively reduces during the placement run it implies that the design will converge and placement will be successful. Post placement, the design can be viewed on magic within ```results/placement``` directory:
+
+```
+magic -T /home/rachana/open_pdks/sky130/magic/sky130.tech lef read ../../tmp/merged.max.lef def read picorv32.def &
+
+``` 
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/magic_placement.png)  
+
   
 </details>
 
@@ -418,6 +437,7 @@ Legalisation of cells is important from timing point of view.
 1. https://openlane.readthedocs.io/en/latest/
 2. https://woset-workshop.github.io/PDFs/2020/a21.pdf
 3. https://github.com/Devipriya1921/Physical_Design_Using_OpenLANE_Sky130#components-of-opensource-digital-asic-design
-4. https://github.com/efabless/openlane
+4. https://github.com/kanishr1/
+5. https://github.com/aasthadave9/Advanced-Physical-Design-Using-OpenLANE-Sky130/
 
 
