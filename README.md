@@ -3,7 +3,7 @@
 
 [Day 2 - Good flooplan vs Bad Floorplan and introduction to library cells](#day-2---good-flooplan-vs-bad-floorplan-and-introduction-to-library-cells)  
 
-[Day 3 - Design Library cell using Magic Layout and NG Spice Characterisation]()
+[Day 3 - Design Library cell using Magic Layout and NG Spice Characterisation](#design-library-cell-using-magic-layout-and-ng-spice-characterisation)
 
 [References](#references)
 
