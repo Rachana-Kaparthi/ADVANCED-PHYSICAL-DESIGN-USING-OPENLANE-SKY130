@@ -475,6 +475,8 @@ in_fall_thr | 50% value
 out_rise_thr | 50% value
 out_fall_thr | 50% value  
 
+**Propagation d
+
 *Propagation Delay*
 
 - Propagation delay refers to the time it takes for a change in an input signal to reach 50% of its final value to produce a corresponding change in the output signal to reach 50% of its final value of a digital circuit.
