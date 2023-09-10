@@ -294,17 +294,19 @@ Flop ratio = (No.of D flipflops)/(Total no.of cells) =1596/10104 = 0.1579
 
 <details>
   <summary>Chip Floor Planning considerations  </summary>  
-  
+
   There are two important parameters when it comes to floorplanning namely, Utilisation Factor and Aspect Ratio. 
   
 *Utilisation Factor:*  
 
  - The ratio of area occupied by the cells in the netlist to the total area of the core
  - It is better to have a utilization Factor of 0.5 to 0.6 to accomodate any extra logic later on.
+   
 *Aspect Ratio:*
 
  - The ratio of height of a die to its width is defined as Aspect Ratio.
  -  Aspect ratio of 1 signifies that the die is of square shape and any other value other than 1 signifies that the die is rectangular shape.
+   
 **Floor planning**
 
 The arrangement of IP's on a chip is referred to as floor planning.
