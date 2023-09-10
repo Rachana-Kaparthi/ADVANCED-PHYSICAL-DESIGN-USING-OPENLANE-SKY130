@@ -3,6 +3,8 @@
 
 [Day 2 - Good flooplan vs Bad Floorplan and introduction to library cells](#day-2---good-flooplan-vs-bad-floorplan-and-introduction-to-library-cells)  
 
+[Day 3 - Design Library cell using Magic Layout and NG Spice Characterisation]()
+
 [References](#references)
 
 
@@ -501,7 +503,7 @@ A poor choice of threshold points leads to neative delay value. Therefore a corr
 
 </details>  
 
-## Design Library cell using Magic Layout and NG Spice Characterisation  
+## Day 3 - Design Library cell using Magic Layout and NG Spice Characterisation  
 
 <details>
   <summary>CMOS Inverter NG Spice simulations</summary>  
