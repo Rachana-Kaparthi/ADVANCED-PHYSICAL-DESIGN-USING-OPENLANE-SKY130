@@ -430,7 +430,20 @@ magic -T /home/rachana/open_pdks/sky130/magic/sky130.tech lef read ../../tmp/mer
 ``` 
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/magic_placement.png)  
 
+**Note:** Power distribution network generation is usually a part of the floorplan step. However, in the openLANE flow, floorplan does not generate PDN. The steps are - floorplan, placement CTS and then PDN.  
+ 
+</details>  
+<details>
+  <summary>Cell design and Characterization flows</summary>  
+  Each cell that is placed on the layout is referred to as standard cell. Standard cells are pre-designed and pre-characterized logic gates, flip-flops, latches, and other digital components for which the definition is available in libraries. 
   
+**Standard Cell Design Flow**
+
+Standard cell design flow involves the following:
+1. Inputs: PDKs, DRC & LVS rules, SPICE models, libraries, user-defined specifications 
+2. Design steps: Circuit design, Layout design (Art of layout Euler's path and stick diagram), Extraction of parasitics, Characterization (timing, noise, power)
+3. Outputs: CDL (circuit description language), LEF, GDSII, extracted SPICE netlist (.cir), timing, noise and power .lib files
+
 </details>
 
 ## References
