@@ -313,7 +313,14 @@ The arrangement of IP's on a chip is referred to as floor planning.
 
 *Pre-placed cells:*  
 
-Whenever there is a complex combinational circuit, it can be divided into multiple sets of black boxes with inputs and outputs declared and placed on the core at fixed positions. pre-placed cells refer to specific logic blocks, memory elements, or other functional units that are fixed in their positions on the chip's layout during the initial stages of design. These cells are placed manually by the chip designer or through automated tools. Since these IP's are placed before automated Placement and Routing, these are reffered to as Pre-placed cells.   
+Whenever there is a complex combinational circuit, it can be divided into multiple sets of black boxes with inputs and outputs declared and placed on the core at fixed positions. pre-placed cells refer to specific logic blocks, memory elements, or other functional units that are fixed in their positions on the chip's layout during the initial stages of design and cannot be moved to a different position later on. These cells are placed manually by the chip designer or through automated tools. Since these IP's are placed before automated Placement and Routing, these are reffered to as Pre-placed cells.  
+
+*Decoupling capacitors:*  
+
+Pre-placed cells must then be surrounded with decoupling capacitors (decaps). The resistances and capacitances associated with long wire lengths can cause the power supply voltage to drop significantly before reaching the logic circuits. This can lead to the signal value entering into the undefined region, outside the noise margin range. Decaps are huge capacitors charged to power supply voltage and placed close the logic circuit. Their role is to decouple the circuit from power supply by supplying the necessary amount of current to the circuit. They pervent crosstalk and enable local communication.   
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/decap.png)  
+In the figure Blocks A, B and C are preplaced cells surrounded by Decoupling capacitors.  
+
 
 </details>
 
