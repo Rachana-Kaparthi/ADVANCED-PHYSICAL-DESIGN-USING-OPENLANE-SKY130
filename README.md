@@ -371,16 +371,30 @@ The netlist defines connectivity between logic gates. The place between the core
 4. ```FP_IO_MODE``` - defines pin configurations (1 = equidistant/0 = not equidistant)
 5. ```FP_CORE_VMETAL``` - vertical metal layer
 6. ```FP_CORE_HMETAL``` - horizontal metal layer
+
+* Importance files in increasing priority order:
+1. floorplan.tcl - System default envrionment variables
+2. conifg.tcl
+3. sky130A_sky130_fd_sc_hd_config.tcl
    
-***Note: Usually, vertical metal layer and horizontal metal layer values will be 1 more than that specified in the files***
+**Note: Usually, vertical metal layer and horizontal metal layer values will be 1 more than that specified in the files**
  
  To run the picorv32a floorplan in openLANE:
  ```
  run_floorplan
- 
  ```
  ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/run_floorplan.png)  
  
+ Post the floorplan run, a .def file will have been created within the "results/floorplan" directory. We may review floorplan files by checking the "floorplan.tcl". The system defaults will have been overriden by switches set in "conifg.tcl" and further overriden by switches set in "sky130A_sky130_fd_sc_hd_config.tcl".  
+ 
+To view the floorplan, Magic is invoked after moving to the results/floorplan directory:
+
+```
+magic -T /home/rachana/open_pdks/sky130/magic/sky130.tech lef read ../../tmp/merged.min.lef def read picorv32.def &
+```
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/magic_output.png)  
+
+
   
 </details>
 
