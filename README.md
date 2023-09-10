@@ -327,7 +327,7 @@ When there is a single power supply and ground on the chip, following effects ma
 - Voltage droop, also known as voltage sag or voltage drop, refers to a temporary reduction in the power supply voltage at a specific point on the chip when a high current demand occurs. This condition arises when several blocks or cells try to draw power at the same time. 
 - Ground Bump is a transient effect that can occur during the operation of the circuit where the voltage level of the ground (GND) signal temporarily rises or "bounces" above its reference voltage due to the switching of digital logic gates or other high-current activities. This condition arises when several blocks or cells try to dissipate power at the same time.
 
-If voltage drops below Noise margin level in case of Voltage droops or voltage rises above Noise margin level in case of ground bumps then this results in undesired states.To mitigate this issue there should be more then one power supply and ground ports so that the blocks draw power or dissipate power to the nearest power supply/grounds.
+If voltage drops below Noise margin level in case of Voltage droops or voltage rises above Noise margin level in case of ground bumps then this results in undesired states.To mitigate this issue power supply and Ground ports are placed as grid of horizontal and vertical tracks so that the blocks draw power or dissipate power to the nearest power supply/ground intersection points.
 
 
 </details>
