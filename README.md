@@ -473,16 +473,19 @@ slew_high_fall_thr | 80% value
 in_rise_thr | 50% value
 in_fall_thr | 50% value
 out_rise_thr | 50% value
-out_fall_thr | 50% value
+out_fall_thr | 50% value  
 
-Propagation delay refers to the time it takes for a change in an input signal to reach 50% of its final value to produce a corresponding change in the output signal to reach 50% of its final value of a digital circuit.
+*Propagation Delay*
+
+- Propagation delay refers to the time it takes for a change in an input signal to reach 50% of its final value to produce a corresponding change in the output signal to reach 50% of its final value of a digital circuit.
 
 ```
 rise delay =  time(out_fall_thr) - time(in_rise_thr)
 ```
+*Transition time*  
 
-Transition time refers to the time it takes for a digital signal to change its voltage level from one logic state (e.g., logic low or 0) to another logic state (e.g., logic high or 1) or vice versa.   
-Transition time is typically measured as the time interval between the moment when the signal voltage reaches a specific percentage (e.g., 10% to 90% or 20% to 80%) of its final value during a voltage transition and the moment when it reaches the opposite percentage during the subsequent transition.  
+- Transition time refers to the time it takes for a digital signal to change its voltage level from one logic state (e.g., logic low or 0) to another logic state (e.g., logic high or 1) or vice versa.   
+- Transition time is typically measured as the time interval between the moment when the signal voltage reaches a specific percentage (e.g., 10% to 90% or 20% to 80%) of its final value during a voltage transition and the moment when it reaches the opposite percentage during the subsequent transition.  
 
 ```
 Fall transition time: time(slew_high_fall_thr) - time(slew_low_fall_thr)
