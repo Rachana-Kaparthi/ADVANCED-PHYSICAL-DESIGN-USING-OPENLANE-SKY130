@@ -436,8 +436,8 @@ magic -T /home/rachana/open_pdks/sky130/magic/sky130.tech lef read ../../tmp/mer
 <details>
   <summary>Cell design and Characterization flows</summary>  
   Each cell that is placed on the layout is referred to as standard cell. Standard cells are pre-designed and pre-characterized logic gates, flip-flops, latches, and other digital components for which the definition is available in libraries. 
-  
-**Standard Cell Design Flow**
+    
+*Standard Cell Design Flow*
 
 Standard cell design flow involves the following:
 1. Inputs: PDKs, DRC & LVS rules, SPICE models, libraries, user-defined specifications 
