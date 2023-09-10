@@ -187,8 +187,9 @@ Below figure demonstrates the Openlane ASIC flow-
  C. Physical Implementation -Most of the tools in this stage are used from within the OpenROAD application in combination with other tools, some of them are custom and based on the OpenDB infrastructure,while others are indpendent.  
  
   D. Post-routing Evaluation of Results -DRC and LVS are then performed using magic and netgen .Antenna checking is performed by either OpenROAD’s ARC (Antenna Rule Checker) or using magic.  
-  
-**Open-Source EDA Tools**  
+ </details>  
+ 
+<details>Open-Source EDA Tools**  
 
 OpenLANE utilises a variety of opensource tools in the execution of the ASIC flow:
 Task | Tools
