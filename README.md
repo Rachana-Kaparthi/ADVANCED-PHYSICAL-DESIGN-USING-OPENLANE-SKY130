@@ -330,6 +330,10 @@ When there is a single power supply and ground on the chip, following effects ma
 If voltage drops below Noise margin level in case of Voltage droops or voltage rises above Noise margin level in case of ground bumps then this results in undesired states.To mitigate this issue power supply and Ground ports are placed as grid of horizontal and vertical tracks so that the blocks draw power or dissipate power to the nearest power supply/ground intersection points.
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/power_supply.png)  
 
+*Pin Placement:*  
+
+The netlist defines connectivity between logic gates. The place between the core and die is utilised for placing pins. The connectivity information coded in either VHDL or Verilog is used to determine the position of I/O pads of various pins. The input, output and Clock pins are placed optimally such that there is less complication in routing or optimised delay.
+
 
 </details>
 
