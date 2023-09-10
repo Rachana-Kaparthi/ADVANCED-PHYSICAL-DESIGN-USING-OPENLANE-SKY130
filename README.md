@@ -286,6 +286,12 @@ Synthesis report:
 ```
 Flop ratio = (No.of D flipflops)/(Total no.of cells) =1596/10104 = 0.1579
 
+</details>
+
+## Day 2 - Good flooplan vs Bad Floorplan and introduction to library cells  
+
+<details>
+  <summary>Chip Floor Planning considerations  </summary>  
   
 </details>
 
