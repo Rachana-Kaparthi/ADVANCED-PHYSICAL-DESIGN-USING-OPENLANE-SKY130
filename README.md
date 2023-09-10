@@ -8,7 +8,9 @@
 
 ## Day 1 - Inception of open-source EDA,Openlane and Sky130 PDK
 <details>
-<summary>Installation of Openlane</summary>
+<summary>Installation of Required Tools</summary>  
+  
+**OpenLane**  
   
 OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, KLayout and a number of custom scripts for design exploration and optimization. It also provides a number of custom scripts for design exploration and optimization.  
 
@@ -67,7 +69,7 @@ cd /home/rachana/OpenLane/designs/ci
 cp -r * ../
 ```
 
-**Installation of OpenSTA:**  
+**OpenSTA:**  
 
 Use the following commands to checkout the git repository and build the OpenSTA library and excutable.
 ```
@@ -82,6 +84,26 @@ cd build
 cmake ..
 make
 ```
+
+**Magic**  
+Use the below commands for installing Magic-  
+
+```
+sudo apt-get install m4
+sudo apt-get install tcsh
+sudo apt-get install csh
+sudo apt-get install libx11-dev
+sudo apt-get install tcl-dev tk-dev
+sudo apt-get install libcairo2-dev
+sudo apt-get install mesa-common-dev libglu1-mesa-dev
+sudo apt-get install libncurses-dev
+git clone https://github.com/RTimothyEdwards/magic
+cd magic
+./configure
+make
+sudo make install
+```
+
   
 </details>
 <details>
@@ -335,8 +357,10 @@ If voltage drops below Noise margin level in case of Voltage droops or voltage r
 
 The netlist defines connectivity between logic gates. The place between the core and die is utilised for placing pins. The connectivity information coded in either VHDL or Verilog is used to determine the position of I/O pads of various pins. The input, output and Clock pins are placed optimally such that there is less complication in routing or optimised delay.
 
-**Floorplan run on OpenLANE & view in Magic**
-
+</details>
+<details>
+  <summary>Floorplan run on OpenLANE & view of the layout in Magic</summary>  
+  
 </details>
 
 ## References
