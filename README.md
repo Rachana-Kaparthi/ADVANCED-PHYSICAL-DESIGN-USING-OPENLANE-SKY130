@@ -474,8 +474,10 @@ in_rise_thr | 50% value
 in_fall_thr | 50% value
 out_rise_thr | 50% value
 out_fall_thr | 50% value  
+</details>
 
-**Propagation Delay and Transition time**
+<details>
+  <summary>Propagation Delay and Transition time</summary>
 
 *Propagation Delay*
 
