@@ -545,11 +545,12 @@ The layout shown in magic is as below:
 A 16-mask CMOS (Complementary Metal-Oxide-Semiconductor) process is a manufacturing process technology that involves the use of 16 different masks or layers during the fabrication of integrated circuits. These masks are used to define various features and components on the semiconductor wafer, such as transistors, interconnects, and other essential elements. The number of masks used in a CMOS process can vary depending on the specific technology and the complexity of the integrated circuits being produced.  
 Below are steps involved in 16-Mask CMOS Process-  
 
-1. Substrate selection
+1. Substrate selection  
 2. Creating active region for transistors
    - create Isolation between active region pockets by SiO2 and Si3N4 deposition followed by photolithography and etching which is termed as LOCOS(Local oxidation of Silicon) process.
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/locos.png)
 The top layer that is present in the figure is of Silicon Nitrate(Si3N4) which is stripped using hot phosphoric acid.
+
 3.N-well and P-well formation
   - Ion implanation by Boron for P-well and by Phosphorous for N-well formation.
   - ~200KeV of energy is required for Boron atoms to enter into P-substrate during ion implantation process for creating P well.
@@ -558,12 +559,23 @@ The top layer that is present in the figure is of Silicon Nitrate(Si3N4) which i
 
   - High-temperature furnace process drives-in diffusion to establish well depths, known as the twin tub process.
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/well_creation2.png)
+
 4. Formation of gate
   - The gate is a pivotal CMOS transistor terminal that controls threshold voltages for transistor switching.
   - A polysilicon layer is deposited and photolithography techniques are applied to create NMOS and PMOS gates.
   - Important parameters for gate formation include oxide capacitance and doping concentration.
   - Here gate voltage is controlled by doping, oxide capacitances and also made low resistance gate by additional doping of polysilicon with n-type impurities like Phosphorus and Arsenic.
-![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/gate_formation.png)
+    
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/gate_formation.png)  
+
+5. Lightly doped Drain(LDD) formation
+  -  LDD regions are intentionally created in the transistor structure to mitigate problems like hot electron injection and short-channel effects.
+  - 
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/LDD.png)
+
+  - As shown in the figure, LDD regions are kept intact by side-wall spacers which are formed by a process called plasma anisotropic etching.
+    
+6. Source and Drain formation
 
 
 
