@@ -540,7 +540,22 @@ magic -T libs/sky130A.tech sky130_inv.mag &
 The layout shown in magic is as below:  
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/magic_inv.png)  
 
-**16-Mask CMOS Process**  
+**16-Mask CMOS Fabrication Process**  
+A 16-mask CMOS (Complementary Metal-Oxide-Semiconductor) process is a manufacturing process technology that involves the use of 16 different masks or layers during the fabrication of integrated circuits. These masks are used to define various features and components on the semiconductor wafer, such as transistors, interconnects, and other essential elements. The number of masks used in a CMOS process can vary depending on the specific technology and the complexity of the integrated circuits being produced.  
+Below are steps involved in 16-Mask CMOS Process-  
+
+1. Substrate selection
+2. Creating active region for transistors
+   - create Isolation between active region pockets by SiO2 and Si3N4 deposition followed by photolithography and etching which is termed as LOCOS(Local oxidation of Silicon) process.
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/locos.png)
+The top layer that is present in the figure is of Silicon Nitrate(Si3N4) which is stripped using hot phosphoric acid.
+3.N-well and P-well formation
+  - Ion implanation by Boron for P-well and by Phosphorous for N-well formation.
+  - ~200KeV of energy is required for Boron atoms to enter into P-substrate during ion implantation process for creating P well.
+  - same process is repeated with phosphorus atoms by applying ~400KeV of energy for creating N well.
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/well_creation.png)
+
+
 
 
 </details>
