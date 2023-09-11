@@ -585,7 +585,9 @@ The top layer that is present in the figure is of Silicon Nitrate(Si3N4) which i
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/source_drain_formation.png)
 
 7. Steps to form Contacts and Interconnects
-
+  - Previously deposited thin oxide layer is etched off using Hydrofluoric solution
+  - Deposit Titanium on wafer using sputtering
+  - 
 
 
 
