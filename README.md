@@ -545,7 +545,9 @@ To verify whether the layout is that of CMOS inverter, verification of P-diffusi
 Other verification steps are to check drain and source connections. The drains of both PMOS and NMOS must be connected to output port (here, Y) and the sources of both must be connected to power supply VDD (here, VPWR).
 
 **LEF or library exchange format:**
-A format that tells us about cell boundaries, VDD and GND lines. It contains no info about the logic of circuit and is also used to protect the IP.
+A format that tells us about cell boundaries, VDD and GND lines. It contains no info about the logic of circuit and is also used to protect the IP.  
+
+Refer [here](https://github.com/nickson-jose/vsdstdcelldesign/blob/master/README.md#standard-cell-layout-design-in-magic) for step by step procedure of designing Standard cell layout in Magic.
 
 </details>  
 <details>
