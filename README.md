@@ -520,14 +520,14 @@ Before performing SPICE simulation, we have to create a SPICE Deck that contains
 6. Model description - model files that should be included in the simulation
 7. Netlist description 
 
-**Static Behavious Evaluation: CMOS inverter Robustness**    
+**Switching threshold[Vm]-**  
 
-*1. Switching threshold[Vm]-*  
 The point at which Vin=Vout is called switching threshold of CMOS.At this point both PMOS and NOMOS are in ON state which gives rise to a leakage current.  
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/switching_threshold.png)  
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/switching_threshold2.png)  
 
  **Steps to Gitclone vsdstdcelldesign**  
+ 
  The Magic layout of a CMOS inverter will be used so as to intergate the inverter with the picorv32a design. To do this, inverter magic file is sourced from [vsdstdcelldesign](https://github.com/nickson-jose/vsdstdcelldesign) by cloning it within the ```home/OpenLane``` directory as follows:
 ```
 git clone https://github.com/nickson-jose/vsdstdcelldesign
@@ -553,8 +553,12 @@ The top layer that is present in the figure is of Silicon Nitrate(Si3N4) which i
 3.N-well and P-well formation
   - Ion implanation by Boron for P-well and by Phosphorous for N-well formation.
   - ~200KeV of energy is required for Boron atoms to enter into P-substrate during ion implantation process for creating P well.
-  - same process is repeated with phosphorus atoms by applying ~400KeV of energy for creating N well.
+  - Same process is repeated with phosphorus atoms by applying ~400KeV(requires more energy as Phosphorus atoms are heavier than Boron) of energy for creating N well.
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/well_creation.png)
+
+  - High-temperature furnace processes drive-in diffusion to establish well depths, known as the tub process.
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/well_creation2.png)
+
 
 
 
