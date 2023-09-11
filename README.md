@@ -520,15 +520,20 @@ Before performing SPICE simulation, we have to create a SPICE Deck that contains
 6. Model description - model files that should be included in the simulation
 7. Netlist description 
 
-**Static Behavious Evaluation: CMOS inverter Robustness**  
-There are various parameters that define the robustness of CMOS. They are:   
+**Static Behavious Evaluation: CMOS inverter Robustness**    
 
 *1. Switching threshold[Vm]-*  
 The point at which Vin=Vout is called switching threshold of CMOS.At this point both PMOS and NOMOS are in ON state which gives rise to a leakage current.  
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/switching_threshold.png)  
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/switching_threshold2.png)  
 
-  
+ **Steps to Gitclone vsdstdcelldesign**  
+ The Magic layout of a CMOS inverter will be used so as to intergate the inverter with the picorv32a design. To do this, inverter magic file is sourced from [vsdstdcelldesign](https://github.com/nickson-jose/vsdstdcelldesign) by cloning it within the ```home/OpenLane``` directory as follows:
+```
+git clone https://github.com/nickson-jose/vsdstdcelldesign
+```
+This creates a vsdstdcelldesign named folder in the openlane directory.
+
 </details>
 
 ## References
