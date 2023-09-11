@@ -556,7 +556,7 @@ The top layer that is present in the figure is of Silicon Nitrate(Si3N4) which i
   - Same process is repeated with phosphorus atoms by applying ~400KeV(requires more energy as Phosphorus atoms are heavier than Boron) of energy for creating N well.
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/well_creation.png)
 
-  - High-temperature furnace processes drive-in diffusion to establish well depths, known as the tub process.
+  - High-temperature furnace process drives-in diffusion to establish well depths, known as the twin tub process.
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/well_creation2.png)
 
 
