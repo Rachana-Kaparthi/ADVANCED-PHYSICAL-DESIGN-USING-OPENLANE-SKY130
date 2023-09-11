@@ -558,6 +558,12 @@ The top layer that is present in the figure is of Silicon Nitrate(Si3N4) which i
 
   - High-temperature furnace process drives-in diffusion to establish well depths, known as the twin tub process.
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/well_creation2.png)
+4. Formation of gate
+  - The gate is a pivotal CMOS transistor terminal that controls threshold voltages for transistor switching.
+  - A polysilicon layer is deposited and photolithography techniques are applied to create NMOS and PMOS gates.
+  - Important parameters for gate formation include oxide capacitance and doping concentration.
+  - Here gate voltage is controlled by doping, oxide capacitances and also made low resistance gate by additional doping of polysilicon with n-type impurities like Phosphorus and Arsenic.
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/gate_formation.png)
 
 
 
