@@ -539,8 +539,9 @@ magic -T libs/sky130A.tech sky130_inv.mag &
 ```
 The layout shown in magic is as below:  
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/magic_inv.png)  
-
-**16-Mask CMOS Fabrication Process**  
+</details>  
+<details>
+<summary>16-Mask CMOS Fabrication Process</summary>
 A 16-mask CMOS (Complementary Metal-Oxide-Semiconductor) process is a manufacturing process technology that involves the use of 16 different masks or layers during the fabrication of integrated circuits. These masks are used to define various features and components on the semiconductor wafer, such as transistors, interconnects, and other essential elements. The number of masks used in a CMOS process can vary depending on the specific technology and the complexity of the integrated circuits being produced.  
 Below are steps involved in 16-Mask CMOS Process-  
 
