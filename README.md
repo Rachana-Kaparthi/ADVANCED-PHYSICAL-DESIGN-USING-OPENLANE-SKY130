@@ -593,7 +593,12 @@ The top layer that is present in the figure is of Silicon Nitrate(Si3N4) which i
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/interconnects.png)  
 
 8. Higher level metal formation
-  - To bring our metal contacts, non-planar topography is not suitable. Hence, a thick layer of SiO2 doped with phosphorus or Boron is deposited on the surface of the wafer and wafer surface is planarized using a process called Chemical mechanical Polishing. 
+  - To bring our metal contacts, non-planar topography is not suitable. Hence, a thick layer of SiO2 doped with phosphorus or Boron is deposited on the surface of the wafer and wafer surface is planarized using a process called Chemical mechanical Polishing.
+  - TiN and blanket Tungsten layers are deposited and subjected to CMP.
+  - An aluminum (Al) layer is added and subjected to photolithography and CMP.
+  - This constitutes the first level of interconnects, and additional interconnect layers are added to reach higher-level metal layers.
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/metal_contacts.png)
+
 
 
 
