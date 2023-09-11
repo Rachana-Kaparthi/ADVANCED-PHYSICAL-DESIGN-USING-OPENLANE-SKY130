@@ -519,10 +519,14 @@ Before performing SPICE simulation, we have to create a SPICE Deck that contains
 5. Capacitance load - value of the capacitance connected at the load
 6. Model description - model files that should be included in the simulation
 7. Netlist description 
-8. Libraries included
 
 **Static Behavious Evaluation: CMOS inverter Robustness**  
-There are various parameters that define the robustness of CMOS. They are:  
+There are various parameters that define the robustness of CMOS. They are:   
+
+*1. Switching threshold[Vm]-*  
+The point at which Vin=Vout is called switching threshold of CMOS.At this point both PMOS and NOMOS are in ON state which gives rise to a leakage current.  
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/switching_threshold.png)  
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/switching_threshold2.png)  
 
   
 </details>
