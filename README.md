@@ -599,6 +599,25 @@ The top layer that is present in the figure is of Silicon Nitrate(Si3N4) which i
   - This constitutes the first level of interconnects, and additional interconnect layers are added to reach higher-level metal layers.
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/metal_contacts.png)
 
+The 16 masks used in the process are:  
+
+- Substrate Mask (Mask 1): This mask defines the active regions on the silicon wafer where transistors and other devices will be formed. It specifies the boundaries of the N-well and P-well regions.
+- Threshold Voltage Adjustment Mask (Mask 2): This mask adjusts the threshold voltage of the transistors by defining the regions where threshold voltage implants are required.
+- Gate Oxide Mask (Mask 3): This mask defines the areas where gate oxide will be grown or deposited. The gate oxide acts as an insulator between the gate electrode and the silicon substrate.
+- Poly-Silicon Gate Mask (Mask 4): This mask defines the gate electrodes for both N-channel and P-channel transistors. It outlines the shape of the gates.
+- N+ and P+ Diffusion Masks (Masks 5 and 6): These masks define the source and drain regions for the N-channel and P-channel transistors, respectively. These regions are typically doped with impurities to create the necessary electrical characteristics.
+- Contact Mask (Mask 7): This mask defines the openings for contacts, which allow the metal layers to connect to the underlying silicon.
+- First Metal Layer Mask (Mask 8): This mask defines the first layer of metal interconnects that connect various components on the chip, such as transistors and contacts.
+- Interlayer Dielectric (ILD) Mask (Mask 9): This mask defines the dielectric material that insulates metal layers from each other. It also specifies the locations of vias for vertical connections.
+- Via Mask (Mask 10): This mask defines the openings in the ILD layer for vias, which enable vertical connections between metal layers.
+- Second Metal Layer Mask (Mask 11): This mask defines the second layer of metal interconnects, which connect to the underlying metal layer and vias.
+- Barrier Layer Mask (Mask 12): This mask defines layers used to improve adhesion between metal and dielectric, enhancing the reliability of the interconnects.
+- Third Metal Layer Mask (Mask 13): This mask defines the third layer of metal interconnects, which can connect to the lower metal layers through vias.
+- Passivation Layer Mask (Mask 14): This mask defines the protective passivation layer that covers the entire chip, protecting it from external factors and contamination.
+- Bond Pad Mask (Mask 15): This mask defines the locations of bond pads, which are used for external electrical connections and testing.
+- Test Structure Mask (Mask 16): This mask includes various test structures used for quality control, testing, and characterization during manufacturing.
+
+
 
 
 
