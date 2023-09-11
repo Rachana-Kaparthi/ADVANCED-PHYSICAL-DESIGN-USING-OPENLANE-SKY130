@@ -532,7 +532,16 @@ The point at which Vin=Vout is called switching threshold of CMOS.At this point 
 ```
 git clone https://github.com/nickson-jose/vsdstdcelldesign
 ```
-This creates a vsdstdcelldesign named folder in the openlane directory.
+This creates a vsdstdcelldesign named folder in the openlane directory.   
+Now, we can view the layout of inverter in magic using the below command:  
+```
+magic -T libs/sky130A.tech sky130_inv.mag &
+```
+The layout shown in magic is as below:  
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/magic_inv.png)  
+
+**16-Mask CMOS Process**  
+
 
 </details>
 
