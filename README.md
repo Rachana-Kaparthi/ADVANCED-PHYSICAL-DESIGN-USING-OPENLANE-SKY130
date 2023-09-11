@@ -547,7 +547,17 @@ Other verification steps are to check drain and source connections. The drains o
 **LEF or library exchange format:**
 A format that tells us about cell boundaries, VDD and GND lines. It contains no info about the logic of circuit and is also used to protect the IP.  
 
-Refer [here](https://github.com/nickson-jose/vsdstdcelldesign/blob/master/README.md#standard-cell-layout-design-in-magic) for step by step procedure of designing Standard cell layout in Magic.
+Refer [here](https://github.com/nickson-jose/vsdstdcelldesign/blob/master/README.md#standard-cell-layout-design-in-magic) for step by step procedure of designing Standard cell layout in Magic.  
+
+**SPICE extraction:**
+Within the Magic environment, following commands are used in tkcon to achieve .mag to .spice extraction:
+```
+extract all
+ext2spice cthresh 0 rethresh 0
+ext2spice
+```
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/spice_extraction_magic.png)  
+
 
 </details>  
 <details>
