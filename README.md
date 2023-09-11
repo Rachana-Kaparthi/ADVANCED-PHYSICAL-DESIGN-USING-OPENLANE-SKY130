@@ -548,6 +548,7 @@ Below are steps involved in 16-Mask CMOS Process-
 1. Substrate selection  
 2. Creating active region for transistors
    - create Isolation between active region pockets by SiO2 and Si3N4 deposition followed by photolithography and etching which is termed as LOCOS(Local oxidation of Silicon) process.
+     
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/locos.png)
 The top layer that is present in the figure is of Silicon Nitrate(Si3N4) which is stripped using hot phosphoric acid.
 
@@ -555,9 +556,11 @@ The top layer that is present in the figure is of Silicon Nitrate(Si3N4) which i
   - Ion implanation by Boron for P-well and by Phosphorous for N-well formation.
   - ~200KeV of energy is required for Boron atoms to enter into P-substrate during ion implantation process for creating P well.
   - Same process is repeated with phosphorus atoms by applying ~400KeV(requires more energy as Phosphorus atoms are heavier than Boron) of energy for creating N well.
+    
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/well_creation.png)
 
   - High-temperature furnace process drives-in diffusion to establish well depths, known as the twin tub process.
+    
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/well_creation2.png)
 
 4. Formation of gate
@@ -570,12 +573,18 @@ The top layer that is present in the figure is of Silicon Nitrate(Si3N4) which i
 
 5. Lightly doped Drain(LDD) formation
   -  LDD regions are intentionally created in the transistor structure to mitigate problems like hot electron injection and short-channel effects.
-  - 
+    
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/LDD.png)
 
   - As shown in the figure, LDD regions are kept intact by side-wall spacers which are formed by a process called plasma anisotropic etching.
     
 6. Source and Drain formation
+  - A thin layer of screen oxide is added to avoid channeling during implants
+  - N+ and P+ implants are formed by a process called High-temperature Annealing which involves subjecting silicon wafers or substrates to carefully controlled high-temperature environments for specified durations.
+    
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/source_drain_formation.png)
+
+7. Steps to form Contacts and Interconnects
 
 
 
