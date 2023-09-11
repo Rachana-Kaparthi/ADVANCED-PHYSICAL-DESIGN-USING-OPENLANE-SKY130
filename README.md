@@ -508,6 +508,22 @@ A poor choice of threshold points leads to neative delay value. Therefore a corr
 <details>
   <summary>CMOS Inverter NG Spice simulations</summary>  
   
+**SPICE Deck creation & Simulation**
+
+Before performing SPICE simulation, we have to create a SPICE Deck that contains the information about the following:
+
+1. Component connectivity - how the components are connected
+2. Component values - values of each component present in the circuit
+3. Nodes - number of nodes and the elements connected between the nodes
+4. Simulation type and parameters - type of simulation to be performed, say operating point, AC analysis or DC Analysis etc
+5. Capacitance load - value of the capacitance connected at the load
+6. Model description - model files that should be included in the simulation
+7. Netlist description 
+8. Libraries included
+
+**Static Behavious Evaluation: CMOS inverter Robustness**  
+There are various parameters that define the robustness of CMOS. They are:  
+
   
 </details>
 
