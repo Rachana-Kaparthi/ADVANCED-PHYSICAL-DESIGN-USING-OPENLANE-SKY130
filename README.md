@@ -584,11 +584,16 @@ The top layer that is present in the figure is of Silicon Nitrate(Si3N4) which i
     
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/source_drain_formation.png)
 
-7. Steps to form Contacts and Interconnects
+7. Contacts and Interconnects formation
   - Previously deposited thin oxide layer is etched off using Hydrofluoric solution
-  - Deposit Titanium on wafer using sputtering
+  - Deposit Titanium for low resistant contacts on wafer using sputtering
   - Wafer is heated in Nitrogen at 700-900 degrees which results in the formation of low-resistant titanium silicon dioxide for interconnect contacts and titanium nitride for top-level connections, enabling local communication.
-![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/interconnects.png)
+  - Extra Tin is etched using a process called RCA cleaning.
+    
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/interconnects.png)  
+
+8. Higher level metal formation
+  - To bring our metal contacts, non-planar topography is not suitable. Hence, a thick layer of SiO2 doped with phosphorus or Boron is deposited on the surface of the wafer and wafer surface is planarized using a process called Chemical mechanical Polishing. 
 
 
 
