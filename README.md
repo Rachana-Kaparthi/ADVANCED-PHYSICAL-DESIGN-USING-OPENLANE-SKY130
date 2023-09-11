@@ -538,7 +538,15 @@ Now, we can view the layout of inverter in magic using the below command:
 magic -T libs/sky130A.tech sky130_inv.mag &
 ```
 The layout shown in magic is as below:  
-![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/magic_inv.png)  
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/magic_inv.png)    
+To verify whether the layout is that of CMOS inverter, verification of P-diffusiona nd N-diffusion regions with Polysilicon can be observed:
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/magic_inv_tkcon.png)  
+
+Other verification steps are to check drain and source connections. The drains of both PMOS and NMOS must be connected to output port (here, Y) and the sources of both must be connected to power supply VDD (here, VPWR).
+
+**LEF or library exchange format:**
+A format that tells us about cell boundaries, VDD and GND lines. It contains no info about the logic of circuit and is also used to protect the IP.
+
 </details>  
 <details>
 <summary>16-Mask CMOS Fabrication Process</summary>
