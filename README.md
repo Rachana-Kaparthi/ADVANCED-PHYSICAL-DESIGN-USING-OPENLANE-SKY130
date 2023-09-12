@@ -705,7 +705,21 @@ The 16 masks used in the above process are:
 <details>
   <summary>SKY130 Tech File</summary>  
  <br>   
+  
 **Magic Tool options and DRC Rules**  
+
+The technology file is a setup file that declares layer types, colors, patterns, electrical connectivity, DRC, device extraction rules and rules to read LEF and DEF files.
+Magic layouts can be sourced from [opencircuitdesign.com](https://opencircuitdesign.com/) using the command:
+```
+wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+tar xfz drc_tests.tgz
+```
+![drc_tests folder contents](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/drc_test_contents_.png)
+
+The ```.magicrc``` loads the tech file required by the user. Since this file sets up the tech file, sky130.tech need not be mentioned in the command used to invoke Magic. Hecen Magic can be invoked more conveniently now:
+```
+magic -d XR
+```
   
   
 </details>
@@ -717,6 +731,8 @@ The 16 masks used in the above process are:
 4. https://github.com/kanishr1/
 5. https://github.com/aasthadave9/Advanced-Physical-Design-Using-OpenLANE-Sky130/
 6. https://github.com/nickson-jose/vsdstdcelldesign/
-7. 
+7. http://opencircuitdesign.com/magic/
+8. https://skywater-pdk.readthedocs.io/en/main/
+9. 
 
 
