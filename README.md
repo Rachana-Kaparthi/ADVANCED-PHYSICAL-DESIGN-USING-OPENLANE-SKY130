@@ -617,7 +617,7 @@ From the graph, ```Fall transition = (4.09291 - 4.05004) = 42.87ps```
 *3. Cell rise delay* = time(50% output rise) - time(50% input fall)  
 From the graph, ```Cell rise delay = (2.20636 - 2.15) = 56.36ps```  
 
-*4. Cell fall delay*  = time(50% output fall) - time(50% input rise)
+*4. Cell fall delay*  = time(50% output fall) - time(50% input rise)  
 From the graph, ```Cell fall delay = (4.07479 - 4.05) = 24.79ps```  
 
 
