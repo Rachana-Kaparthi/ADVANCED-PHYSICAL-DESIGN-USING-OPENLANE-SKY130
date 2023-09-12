@@ -705,6 +705,9 @@ The 16 masks used in the above process are:
 <details>
   <summary>SKY130 Tech File</summary>  
   
+  **Magic Tool options and DRC Rules**  
+  
+  
 </details>
 
 ## References
