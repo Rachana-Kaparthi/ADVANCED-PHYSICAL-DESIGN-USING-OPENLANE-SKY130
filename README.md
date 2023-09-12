@@ -558,6 +558,47 @@ ext2spice
 ```
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/spice_extraction_magic.png)  
 
+*ext2spice* commands converts the ext file to spice netlist. cthreh and rthresh are the switches to extract all the parasitic resistance and capacitance. The extracted spice list has to be modified by changinf the scale, adding libraries,voltage sources,simulation commands as shown below to use ngspice to perform simulation:  
+
+```
+* SPICE3 file created from sky130_inv.ext - technology: sky130A
+
+.option scale=0.01u
+.include ./libs/nshort.lib
+.include ./libs/pshort.lib
+
+//.subckt sky130_inv A Y VPWR VGND
+M1000 Y A VGND VGND nshort_model.0 w=35 l=23
++  ad=1.44n pd=0.152m as=1.37n ps=0.148m
+M1001 Y A VPWR VPWR pshort_model.0 w=37 l=23
++  ad=1.44n pd=0.152m as=1.52n ps=0.156m
+
+VDD VPWR 0 3.3V
+VSS VGND 0 0V
+Va A VGND PULSE(0V 3.3V 0 0.1ns 0.1ns 2ns 4ns)
+
+C0 Y VPWR 0.117f
+C1 A VPWR 0.0774f
+C2 Y A 0.0754f
+C3 Y VGND 0.279f
+C4 A VGND 0.45f
+C5 VPWR VGND 0.781f
+//.ends
+
+.tran 1n 20n
+.control
+run
+.endc
+.end
+```
+Use the below command to view the output of the above netlist in NgSpice  
+```
+ngspice <filename>
+```
+Below is the output of ngspice simulation:  
+
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/ngspice_inv.png)
+
 
 </details>  
 <details>
@@ -638,11 +679,10 @@ The 16 masks used in the above process are:
 - *Test Structure Mask (Mask 16):* This mask includes various test structures used for quality control, testing, and characterization during manufacturing.
 
 
-
-
-
-
-
+</details>  
+<details>
+  <summary>SKY130 Tech File</summary>  
+  
 </details>
 
 ## References
