@@ -594,9 +594,9 @@ run
 Use the below command to view the output of the above netlist in NgSpice  
 ```
 // to simulate the netlist file
-ngspice <filename>
+> ngspice <filename>
 // to plot the graph after simulation
-plot y vs time a
+> plot y vs time a
 ```
 Below is the output of ngspice simulation:  
 
