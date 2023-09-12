@@ -716,7 +716,7 @@ tar xfz drc_tests.tgz
 ```
 ![drc_tests folder contents](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/drc_test_contents_.png)
 
-The ```.magicrc``` loads the tech file required by the user. Since this file sets up the tech file, sky130.tech need not be mentioned in the command used to invoke Magic. Hecen Magic can be invoked more conveniently now:
+The ```.magicrc``` loads locally the tech file required by the user. Since this file sets up the tech file, sky130.tech need not be mentioned in the command used to invoke Magic. Hence Magic can be invoked more conveniently:
 ```
 magic -d XR
 ```
