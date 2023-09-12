@@ -600,7 +600,26 @@ Use the below command to view the output of the above netlist in NgSpice
 ```
 Below is the output of ngspice simulation:  
 
-![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/ngspice_inv.png)
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/ngspice_inv.png)  
+
+The spikes in the output at switching points is due to low capacitance loads. This can be taken care of by editing the spice deck to increase the load capacitance value.
+
+**Inverter Standard cell characterization**  
+
+Four timing parameters are used to characterize the inverter standard cell:
+*1. Rise transition:* Time taken for the output to rise from 20% of max value to 80% of max value   
+
+From the graph,```Rise transition = (2.23843 - 2.17935) = 59.08ps```  
+
+*2. Fall transition:* Time taken for the output to fall from 80% of max value to 20% of max value    
+From the graph, ```Fall transition = (4.09291 - 4.05004) = 42.87ps```  
+
+*3. Cell rise delay* = time(50% output rise) - time(50% input fall)  
+From the graph, ```Cell rise delay = (2.20636 - 2.15) = 56.36ps```  
+
+*4. Cell fall delay*  = time(50% output fall) - time(50% input rise)
+From the graph, ```Cell fall delay = (4.07479 - 4.05) = 24.79ps```  
+
 
 
 </details>  
