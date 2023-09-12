@@ -731,14 +731,13 @@ met3.5 is the name of a periphery rule. The descriptions of DRC rules can be fou
 To check for vias in the metal3 layer, make a rectangluar selection in an empty space and paint it with the m3contact color from the color palette by clicking middle mouse button or by typing the below command in tkcon window:  
 ```paint m3contact```
 
-The vias can be viewed by: ```cif see VIA2```
+The metal cuts in vias can be viewed by: ```cif see VIA2```
 
 ![vias](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/m3contact.png)  
 
 In this fashion, one can search for DRC errors, read up their descriptions and resolve them by editing the technology file.
 
 
-  
 </details>
 
 ## References
