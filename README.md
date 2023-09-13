@@ -105,7 +105,19 @@ cd magic
 make
 sudo make install
 ```
+**NG Spice**  
+Download the tarball from [here](https://sourceforge.net/projects/ngspice/files/) to a local directory and unpack it using the following commands:
 
+```
+tar -zxvf ngspice-40.tar.gz
+cd ngspice-40
+mkdir release
+cd release
+../configure  --with-x --with-readline=yes --disable-debug
+make
+sudo make install
+
+```
   
 </details>
 <details>
