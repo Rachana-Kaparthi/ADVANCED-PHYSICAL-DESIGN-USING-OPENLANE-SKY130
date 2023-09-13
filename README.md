@@ -11,8 +11,8 @@
 ## Day 1 - Inception of open-source EDA,Openlane and Sky130 PDK
 <details>
 <summary>Installation of Required Tools</summary>  
-  
-**OpenLane**  
+<details>
+<summary>OpenLane </summary>
   
 OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, KLayout and a number of custom scripts for design exploration and optimization. It also provides a number of custom scripts for design exploration and optimization.  
 
@@ -70,8 +70,9 @@ make test
 cd /home/rachana/OpenLane/designs/ci
 cp -r * ../
 ```
-
-**OpenSTA:**  
+</details>  
+<details>   
+<summary>OpenSTA</summary>
 
 Use the following commands to checkout the git repository and build the OpenSTA library and excutable.
 ```
@@ -86,8 +87,13 @@ cd build
 cmake ..
 make
 ```
+</details>
+<details>
+<summary>  
+  
+Magic
+</summary>  
 
-**Magic**  
 Use the below commands for installing Magic.  
 
 ```
@@ -105,7 +111,9 @@ cd magic
 make
 sudo make install
 ```
-**NG Spice**  
+</details>  
+<details>  
+ <summary> NG Spice   </summary>
 Download the tarball from [here](https://sourceforge.net/projects/ngspice/files/) to a local directory and unpack it using the following commands:
 
 ```
@@ -118,7 +126,8 @@ make
 sudo make install
 
 ```
-  
+  </details>
+
 </details>
 <details>
 <summary>SoC Design and Openlane</summary>
