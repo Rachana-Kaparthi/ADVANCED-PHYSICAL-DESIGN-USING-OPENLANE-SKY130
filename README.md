@@ -12,7 +12,6 @@
 <details>
 <summary>Installation of Required Tools</summary>  
 <details>  
-  - 
 <summary>OpenLane </summary>
   
 OpenLane is an automated RTL to GDSII flow based on several components including OpenROAD, Yosys, Magic, Netgen, CVC, SPEF-Extractor, KLayout and a number of custom scripts for design exploration and optimization. It also provides a number of custom scripts for design exploration and optimization.  
