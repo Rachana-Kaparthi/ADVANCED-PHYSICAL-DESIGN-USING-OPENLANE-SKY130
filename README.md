@@ -89,10 +89,7 @@ make
 ```
 </details>
 <details>
-<summary>  
-  
-Magic
-</summary>  
+<summary>Magic</summary>  
 
 Use the below commands for installing Magic.  
 
