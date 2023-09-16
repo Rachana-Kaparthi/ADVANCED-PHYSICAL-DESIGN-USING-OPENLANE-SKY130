@@ -904,6 +904,10 @@ sta pre_sta.conf
 Since clock tree synthesis has not been performed yet, the analysis is with respect to ideal clocks and only setup time slack is taken into consideration. The slcak value is the difference between data required time and data arrival time. The worst slack value must be greater than or equal to zero. If a negative slack is obtained, following steps may be followed:
 1. Change synthesis strategy, synthesis buffering and synthesis sizing values 
 2. Review maximum fanout of cells and by upsizing the cells i.e replace cells with high drive strength
+```
+set ::env(MAX_FANOUT_CONSTRAINT) 4
+4
+```
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/replace_cell.png)
 
 
@@ -911,7 +915,7 @@ Since clock tree synthesis has not been performed yet, the analysis is with resp
 <details>
   <summary>Clock Tree Synthesis</summary>  
   <br>  
-Clock tree synthesis (CTS) is a crucial step in the design and implementation of digital integrated circuits, especially in the realm of very large scale integration (VLSI) design. It involves creating an optimized clock distribution network that efficiently delivers clock signals to various components (like flip-flops, registers, etc.) within the integrated circuit, ensuring proper synchronization and minimal clock skew.  
+The purpose of building a clock tree is enable the clock input to reach every element and to ensure a zero clock skew. H-tree is a common methodology followed in CTS. Before attempting a CTS run in TritonCTS tool, if the slack was attempted to be reduced in previous run, the netlist may have gotten modified by cell replacement techniques. Therefore, the verilog file needs to be modified using the write_verilog command. Then, the synthesis, floorplan and placement is run again.  
   
 Here's a detailed breakdown of the process and its significance:  
 
@@ -938,6 +942,9 @@ C. Clock Skew Optimization:
 
 Clock skew optimization involves adjusting the placement and sizing of buffers to minimize clock skew and achieve a balanced clock distribution.
 Techniques like buffer resizing, buffer replication, and buffer reordering may be used to achieve optimal skew.  
+
+To run CTS use the below command:  
+
 
 
 </details>
