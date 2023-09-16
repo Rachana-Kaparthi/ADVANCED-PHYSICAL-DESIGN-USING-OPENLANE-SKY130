@@ -879,7 +879,24 @@ When the algorithm works with these delay tables, it utilizes the provided input
 </details>
 <details>  
   <summary>Post Synthesis Timing Analysis</summary>  
+
+**Introduction to Clock Jitter and Uncertainity**  
+
+*Clock Jitter:*
+
+Clock jitter refers to the variation or deviation in the timing of a clock signal from its ideal or expected timing. Clock signal is used to synchronize various operations and components. Ideally, the clock signal should have a constant and precise period, but in reality, due to various factors, the timing can fluctuate. These fluctuations can be in the form of random variations (random jitter) or systematic variations (deterministic jitter).  
   
+*Uncertainty:*
+
+Uncertainty in the context of clocks and timing refers to the lack of precise knowledge about the exact timing or synchronization. This uncertainty can arise from various sources, including but not limited to:
+
+- Measurement inaccuracies or limitations in the measurement instruments.
+- Variability in the clock signal due to environmental factors or component variations.
+- Limitations in the accuracy of the clock generation circuitry.
+
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/clocl_jitter.png)  
+
+
 </details>
 
 ## References
