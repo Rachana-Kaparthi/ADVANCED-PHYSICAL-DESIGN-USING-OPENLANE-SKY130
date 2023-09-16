@@ -791,7 +791,9 @@ To ensure that ports lie on the intersection point, the grid spacing in Magic (t
 ```
 grid 0.46um 0.34um 0.23um 0.17um
 ```
-After typing the command, in the Magic window it is seen that ports A and Y are present on the intersection point of grid lines
+After typing the command, in the Magic window it is seen that ports A and Y are present on the intersection point of grid lines.  
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/tracks_info.png)  
+
 
 </details>
 
