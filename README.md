@@ -3,7 +3,9 @@
 
 [Day 2 - Good flooplan vs Bad Floorplan and introduction to library cells](#day-2---good-flooplan-vs-bad-floorplan-and-introduction-to-library-cells)  
 
-[Day 3 - Design Library cell using Magic Layout and NG Spice Characterisation](#day-3---design-library-cell-using-magic-layout-and-ng-spice-characterisation)
+[Day 3 - Design Library cell using Magic Layout and NG Spice Characterisation](#day-3---design-library-cell-using-magic-layout-and-ng-spice-characterisation)  
+
+[Day 4 - Timing Analysis using OpenSTA]()
 
 [References](#references)
 
@@ -738,7 +740,8 @@ The ```.magicrc``` loads locally the tech file required by the user. Since this 
 ```
 magic -d XR
 ```
-**DRC Errors**
+**DRC Errors**  
+
 To analyse DRC errors, magic is invoked and the met3.mag file is opened either from the software as ```file-> open-> met3.mag``` or by running command in tkcon as ```magic -d XR met3```.   
 DRC errors can be found by selecting a component and typing: ```drc why``` in tkcon.
 
@@ -755,6 +758,40 @@ The metal cuts in vias can be viewed by: ```cif see VIA2```
 
 In this fashion, one can search for DRC errors, read up their descriptions and resolve them by editing the technology file.
 
+
+</details>  
+
+## Day 4 - Timing Analysis using OpenSTA  
+<details>
+  <summary>Timing modeling using delay tables</summary>  
+
+Alignment of the input and output ports is specified in the ```tracks.info``` file. Follow the below command to view the file :  
+```
+cd /home/rachana/open_pdks/sky130/openlane/sky130_fd_sc_hd
+gedit tracks.info
+```
+Accessing the tracks.info file for the pitch and direction information:
+
+```
+li1 X 0.23 0.46
+li1 Y 0.17 0.34
+met1 X 0.17 0.34
+met1 Y 0.17 0.34
+met2 X 0.23 0.46
+met2 Y 0.23 0.46
+met3 X 0.34 0.68
+met3 Y 0.34 0.68
+met4 X 0.46 0.92
+met4 Y 0.46 0.92
+met5 X 1.70 3.40
+met5 Y 1.70 3.40
+```
+The CMOS Inverter ports A and Y are on li1 layer. It needs to be ensured that they're on the intersection of horizontal and vertical tracks. 
+To ensure that ports lie on the intersection point, the grid spacing in Magic (tkcon) must be changed to the li1 X and li1 Y values. Convergence of grid and tracks can be achieved using the following command:
+```
+grid 0.46um 0.34um 0.23um 0.17um
+```
+After typing the command, in the Magic window it is seen that ports A and Y are present on the intersection point of grid lines
 
 </details>
 
