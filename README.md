@@ -875,11 +875,7 @@ Basically, Delay is a parameter that has huge impact on our cells in the design.
 VLSI engineers have identified specific constraints when inserting buffers to preserve signal integrity. They've noticed that each buffer level must maintain consistent sizing, but their delays can vary depending on the load they drive. To address this, they introduced the concept of "delay tables," which essentially consist of 2D arrays containing values for input slew and load capacitance, each associated with different buffer sizes. These tables serve as timing models for the design.
 
 When the algorithm works with these delay tables, it utilizes the provided input slew and load capacitance values to compute the corresponding delay values for the buffers. In cases where the precise delay data is not readily available, the algorithm employs a technique of interpolation to determine the closest available data points and extrapolates from them to estimate the required delay values.  
-![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/assets/140998470/d9ffb286-711a-4664-b6ba-db27a8be1c45)
-</details>
-<details>  
-  <summary>Post Synthesis Timing Analysis</summary>  
-<br>  
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/assets/140998470/d9ffb286-711a-4664-b6ba-db27a8be1c45)  
 
 **Introduction to Clock Jitter and Uncertainity**  
 
@@ -896,6 +892,19 @@ Uncertainty in the context of clocks and timing refers to the lack of precise kn
 - Limitations in the accuracy of the clock generation circuitry.
 
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/clocl_jitter.png)  
+</details>
+<details>  
+  <summary>Post Synthesis Timing Analysis</summary>  
+<br>  
+
+Timing analysis is carried out outside the openLANE flow using OpenSTA tool. For this, a new file pre_sta.conf is created. This file would be reqiured to carry out the STA analysis. Invoke OpenSTA outside the openLANE flow as follows:  
+```
+sta pre_sta.conf
+```
+Since clock tree synthesis has not been performed yet, the analysis is with respect to ideal clocks and only setup time slack is taken into consideration. The slcak value is the difference between data required time and data arrival time. The worst slack value must be greater than or equal to zero. If a negative slack is obtained, following steps may be followed:
+1. Change synthesis strategy, synthesis buffering and synthesis sizing values 
+2. Review maximum fanout of cells and replace cells with high fanout
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/replace_cell.png)
 
 
 </details>
