@@ -829,7 +829,7 @@ LEF extraction can be carried out in tkcon as follows:
 ```
 lef write
 ```
-This generates ```sky130_inv.lef``` file.
+This generates ```sky130_vsdinv.lef``` file.
 
 **Integrating custom cell in OpenLANE**
 
