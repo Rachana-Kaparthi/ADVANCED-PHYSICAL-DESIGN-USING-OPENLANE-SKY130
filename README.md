@@ -910,8 +910,8 @@ Since clock tree synthesis has not been performed yet, the analysis is with resp
 </details>  
 <details>
   <summary>Clock Tree Synthesis</summary>  
-  
-  Clock tree synthesis (CTS) is a crucial step in the design and implementation of digital integrated circuits, especially in the realm of very large scale integration (VLSI) design. It involves creating an optimized clock distribution network that efficiently delivers clock signals to various components (like flip-flops, registers, etc.) within the integrated circuit, ensuring proper synchronization and minimal clock skew.  
+  <br>  
+Clock tree synthesis (CTS) is a crucial step in the design and implementation of digital integrated circuits, especially in the realm of very large scale integration (VLSI) design. It involves creating an optimized clock distribution network that efficiently delivers clock signals to various components (like flip-flops, registers, etc.) within the integrated circuit, ensuring proper synchronization and minimal clock skew.  
   
 Here's a detailed breakdown of the process and its significance:  
 
@@ -922,18 +922,18 @@ Minimizes clock skew: Clock skew is the variation in arrival times of the clock 
 Balances the load: The clock distribution network should evenly distribute the load to avoid signal integrity issues and ensure consistent performance across the circuit.
 Process of CTS:  
 
-a. Clock Tree Construction:  
+A. Clock Tree Construction:  
 
 Starting with the clock source, the clock tree synthesis algorithm constructs a tree-like structure, branching out to different regions of the design.
 The structure consists of buffers, inverters, and other elements that help distribute the clock signal effectively.  
 
-b. Buffer Insertion:  
+B. Buffer Insertion:  
 
-Buffers are inserted strategically in the clock tree to balance the load and minimize clock skew.  
+- Buffers are inserted strategically in the clock tree to balance the load and minimize clock skew.  
 
-The placement and sizing of these buffers are optimized to meet timing requirements while considering power consumption and area constraints.  
+- The placement and sizing of these buffers are optimized to meet timing requirements while considering power consumption and area constraints.  
 
-c. Clock Skew Optimization:  
+C. Clock Skew Optimization:  
 
 Clock skew optimization involves adjusting the placement and sizing of buffers to minimize clock skew and achieve a balanced clock distribution.
 Techniques like buffer resizing, buffer replication, and buffer reordering may be used to achieve optimal skew.  
