@@ -943,7 +943,32 @@ C. Clock Skew Optimization:
 Clock skew optimization involves adjusting the placement and sizing of buffers to minimize clock skew and achieve a balanced clock distribution.
 Techniques like buffer resizing, buffer replication, and buffer reordering may be used to achieve optimal skew.  
 
-To run CTS use the below command:  
+**Cross Talk in VLSI**  
+Crosstalk in Very Large Scale Integration (VLSI) refers to unwanted electromagnetic or capacitive/inductive coupling between adjacent conductors, such as wires or traces, on an integrated circuit. This phenomenon can lead to signal interference and degradation in the quality of transmitted signals. Hence, shielding is technique used to protect critical nets from crosstalk and clock net is one of the critical nets where shielding has to be implemented.  
+
+The purpose of building a clock tree is enable the clock input to reach every element and to ensure a zero clock skew. H-tree is a common methodology followed in CTS.
+Before attempting a CTS run in TritonCTS tool, if the slack was attempted to be reduced in previous run, the netlist may have gotten modified by cell replacement techniques. Therefore, the verilog file needs to be modified using the ```write_verilog``` command. Then, the synthesis, floorplan and placement is run again. To run CTS use the below command:
+
+```
+run_cts
+```
+
+The CTS run adds clock buffers in therefore buffer delays come into picture and our analysis from here on deals with real clocks. Setup and hold time slacks may now be analysed in the post-CTS STA anlysis in OpenROAD within the openLANE flow:  
+
+```
+openroad
+read_lef /home/rachana/OpenLane/designs/picorv32a/runs/RUN_2023.09.16_11.04.25/tmp/merged.max.lef
+read_def /home/rachana/OpenLane/designs/picorv32a/runs/RUN_2023.09.16_11.04.25/results/cts/picorv32a.def
+write_db pico_cts.db
+read_db pico_cts.db
+read_verilog /home/parallels/OpenLane/designs/picorv32a/runs/RUN_09-09_11-20/results/synthesis/picorv32a.v
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+read_sdc /home/parallels/OpenLane/designs/picorv32a/src/my_base.sdc
+set_propagated_clock (all_clocks)
+report_checks -path_delay min_max -format full_clock_expanded -digits 4
+```
+
+
 
 
 
