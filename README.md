@@ -879,6 +879,7 @@ When the algorithm works with these delay tables, it utilizes the provided input
 </details>
 <details>  
   <summary>Post Synthesis Timing Analysis</summary>  
+<br>  
 
 **Introduction to Clock Jitter and Uncertainity**  
 
