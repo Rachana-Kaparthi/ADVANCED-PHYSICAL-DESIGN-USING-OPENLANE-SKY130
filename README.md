@@ -857,15 +857,29 @@ run_synthesis
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/synthesis.png)  
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/sta_log.png)  
 
-**Delay Tables**
+Next floorplan is run, followed by placement:  
+```
+run_floorplan
+run_placement
+```
+To check the layout invoke magic from the ```results/placement``` directory:
+
+```
+magic -T /home/rachana/OpenLane/vsdstdcelldesign/sky130A.tech lef read ../../tmp/merged.max.lef def read picorv32a.def &
+```
+
+**Delay Tables**  
+
 Basically, Delay is a parameter that has huge impact on our cells in the design. Delay decides each and every other factor in timing. For a cell with different size, threshold voltages, delay model table is created where we can it as timing table. Delay of a cell depends on input transition and out load. Lets say two scenarios, we have long wire and the cell(X1) is sitting at the end of the wire : the delay of this cell will be different because of the bad transition that caused due to the resistance and capcitances on the long wire. we have the same cell sitting at the end of the short wire: the delay of this will be different since the tarn is not that bad comapred to the earlier scenario. Eventhough both are same cells, depending upon the input tran, the delay got chaned. Same goes with o/p load also.
 
 VLSI engineers have identified specific constraints when inserting buffers to preserve signal integrity. They've noticed that each buffer level must maintain consistent sizing, but their delays can vary depending on the load they drive. To address this, they introduced the concept of "delay tables," which essentially consist of 2D arrays containing values for input slew and load capacitance, each associated with different buffer sizes. These tables serve as timing models for the design.
 
 When the algorithm works with these delay tables, it utilizes the provided input slew and load capacitance values to compute the corresponding delay values for the buffers. In cases where the precise delay data is not readily available, the algorithm employs a technique of interpolation to determine the closest available data points and extrapolates from them to estimate the required delay values.  
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/assets/140998470/d9ffb286-711a-4664-b6ba-db27a8be1c45)
-
-
+</details>
+<details>  
+  <summary>Post Synthesis Timing Analysis</summary>  
+  
 </details>
 
 ## References
