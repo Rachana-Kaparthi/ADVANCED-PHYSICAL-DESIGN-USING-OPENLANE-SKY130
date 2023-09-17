@@ -5,7 +5,9 @@
 
 [Day 3 - Design Library cell using Magic Layout and NG Spice Characterisation](#day-3---design-library-cell-using-magic-layout-and-ng-spice-characterisation)  
 
-[Day 4 - Timing Analysis using OpenSTA]()
+[Day 4 - Timing Analysis using OpenSTA](#day-2---good-flooplan-vs-bad-floorplan-and-introduction-to-library-cells)  
+
+[Day 5 - Routing and Design Rule Check(DRC)]()
 
 [References](#references)
 
@@ -977,10 +979,9 @@ Hold Slack:
 Setup Slack:  
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/slck_cts.png)
 
+</details>  
 
-
-
-</details>
+## Day 5 - Routing and Design Rule Check(DRC)
 
 ## References
 1. https://openlane.readthedocs.io/en/latest/
