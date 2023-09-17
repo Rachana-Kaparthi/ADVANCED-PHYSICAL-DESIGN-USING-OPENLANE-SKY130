@@ -908,7 +908,11 @@ Since clock tree synthesis has not been performed yet, the analysis is with resp
 set ::env(MAX_FANOUT_CONSTRAINT) 4
 4
 ```
-![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/replace_cell.png)
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/replace_cell.png)  
+
+Slack before performing CTS:  
+
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/setup_hold_slack.png)    
 
 
 </details>  
@@ -968,8 +972,7 @@ set_propagated_clock (all_clocks)
 report_checks -path_delay min_max -format full_clock_expanded -digits 4
 ```
 Hold Slack:  
-
-![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/setup_hold_slack.png)    
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/setup_time_cts.png)  
 
 Setup Slack:  
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/slck_cts.png)
