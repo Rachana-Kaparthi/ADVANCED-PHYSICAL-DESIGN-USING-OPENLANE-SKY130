@@ -1106,57 +1106,6 @@ PYTHON_BIN=python3 make mount
 
 ```
 
-STEPS RUNNING:
-
-```
-
-[STEP 1] : Running Synthesis.
-[STEP 2] : Running Single-Corner Static Timing Analysis.
-[STEP 3] : Running Initial Floorplanning, Setting Core Dimensions.
-[STEP 4] : Running IO Placement.
-[STEP 5] : Running Power planning with power {VPWR} and ground {VGND}.
-[STEP 6] : Generating PDN.
-[STEP 7] : Performing Random Global Placement.
-[STEP 8] : Running Placement Resizer Design Optimizations.
-[STEP 9] : Writing Verilog.
-[STEP 10] : Running Detailed Placement.
-[STEP 11] : Running Placement Resizer Timing Optimizations.
-[STEP 12] : Writing Verilog, Routing.
-[STEP 13] : Running Global Routing Resizer Timing Optimizations.
-[STEP 14] : Writing Verilog.
-[STEP 15] : Running Detailed Placement.
-[STEP 16] : Running Global Routing, Starting FastRoute Antenna Repair Iterations.
-[STEP 17] : Running Fill Insertion.
-[STEP 18] : Writing Verilog.
-[STEP 19] : Running Detailed Routing, No DRC violations after detailed routing.
-[STEP 20] : Writing Verilog, Running parasitics-based static timing analysis.
-[STEP 21] : Running SPEF Extraction at the min process corner.
-[STEP 22] : Running Multi-Corner Static Timing Analysis at the min process corner.
-[STEP 23] : Running SPEF Extraction at the max process corner.
-[STEP 24] : Running Multi-Corner Static Timing Analysis at the max process corner.
-[STEP 25] : Running SPEF Extraction at the nom process corner...
-[STEP 26] : Running Single-Corner Static Timing Analysis at the nom process corner...
-[STEP 27] : Running Multi-Corner Static Timing Analysis at the nom process corner...
-[STEP 28] : Running Magic to generate various views, Streaming out GDS-II with Magic, Generating MAGLEF views...
-[STEP 29] : Streaming out GDS-II with Klayout...
-[STEP 30] : Running XOR on the layouts using Klayout...
-[STEP 31] : Running Magic Spice Export from LEF...
-[STEP 32] : Writing Powered Verilog.
-[STEP 33] : Writing Verilog.
-[STEP 34] : Running LEF LVS.
-[STEP 35] : Running Magic DRC, Converting Magic DRC Violations to Magic Readable Format, Converting Magic DRC Violations to Klayout Database, Converting DRC Violations to RDB Format, No DRC violations after GDS streaming out, Running Antenna Checks.
-[STEP 36] : Running OpenROAD Antenna Rule Checker.
-[STEP 37] : Running CVC, Saving final set of views, 
-Saving runtime environment, 
-Generating final set of reports, Created manufacturability report at 'designs/riscv/runs/RUN_2022.06.07_10.39.52/reports/manufacturability.rpt', 
-Created metrics report at 'designs/riscv/runs/RUN_2022.06.07_10.39.52/reports/metrics.csv', 
-There are no max slew violations in the design at the typical corner, There are no hold violations in the design at the typical corner, There are no setup violations in the design at the typical corner.
-
-[SUCCESS]: Flow complete.
-
-```
-
-
 ### VLSI INTERACTIVE OPENLANE FLOW
 
 ```
