@@ -7,7 +7,9 @@
 
 [Day 4 - Timing Analysis using OpenSTA](#day-2---good-flooplan-vs-bad-floorplan-and-introduction-to-library-cells)  
 
-[Day 5 - Routing and Design Rule Check(DRC)]()
+[Day 5 - Routing and Design Rule Check(DRC)](#day-5---routing-and-design-rule-checkdrc)  
+
+[Acknowledgement](#acknowledgement)
 
 [References](#references)
 
@@ -981,7 +983,23 @@ Setup Slack:
 
 </details>  
 
-## Day 5 - Routing and Design Rule Check(DRC)
+## Day 5 - Final Steps in RTL2GDS Flow  
+
+<details>
+  <summary>Routing and Design Rule Check(DRC)</summary>  
+
+  **Maze Routing and Lee Algorithm**  
+  
+  
+</details>
+
+## Acknowledgement   
+
+- Kunal Ghosh, VSD Corp. Pvt. Ltd.
+- Kanish,  Colleague, IIIT B
+- Alwin Shaju, Colleague, IIIT B
+- chatgpt
+- Devipriya
 
 ## References
 1. https://openlane.readthedocs.io/en/latest/
@@ -992,6 +1010,7 @@ Setup Slack:
 6. https://github.com/nickson-jose/vsdstdcelldesign/
 7. http://opencircuitdesign.com/magic/
 8. https://skywater-pdk.readthedocs.io/en/main/
-9. 
+9. https://www.vsdiat.com/
+10. https://chat.openai.com/
 
 
