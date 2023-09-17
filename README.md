@@ -1067,6 +1067,17 @@ Routing typically uses up a lot of memory: huge amount of memory used in detaile
 
 At the end of routing, one may see a few DRC violations. In such cases, better routing stratgies may be employed, however, this compromises on time and memory. Once routing is completed, parasitic resistances and capacitances associated with routes come into picture. These parasitics can be extracted into a SPEF file. In newer openLANE versions, SPEF extraction is a part of routing run. Following this, post-route STA may be carried out.
 </details>  
+<details>
+  <summary>GDSII </summary>  
+
+GDS Stands for Graphic Design Standard. This is the file that is sent to the foundry and is called as "tape-out". 
+
+*Fact- Earlier, the GDS files were written on magnetic tapes and sent out to the foundry and hence the name "tape-out"*
+
+In openLane use the command ```magic```
+
+The GDSII file is generated in the `results/signoff/magic` directory.
+</details>
 
 ## Summary
 
