@@ -1063,7 +1063,7 @@ run_routing
 
 Routing typically uses up a lot of memory: huge amount of memory used in detailed routing
 
-![image](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/assets/140998470/a124512d-7bf9-4c29-82ce-e88bb72176fa)
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/drc_errors.png)  
 
 At the end of routing, one may see a few DRC violations. In such cases, better routing stratgies may be employed, however, this compromises on time and memory. Once routing is completed, parasitic resistances and capacitances associated with routes come into picture. These parasitics can be extracted into a SPEF file. In newer openLANE versions, SPEF extraction is a part of routing run. Following this, post-route STA may be carried out.
 </details>  
