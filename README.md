@@ -967,7 +967,11 @@ read_sdc /home/parallels/OpenLane/designs/picorv32a/src/my_base.sdc
 set_propagated_clock (all_clocks)
 report_checks -path_delay min_max -format full_clock_expanded -digits 4
 ```
+Hold Slack:
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/setup_hold_slack.png)    
 
+Setup Slack:  
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/slck_cts.png)
 
 
 
