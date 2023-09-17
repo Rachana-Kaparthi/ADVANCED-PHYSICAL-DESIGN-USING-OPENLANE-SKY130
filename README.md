@@ -9,6 +9,8 @@
 
 [Day 5 - Routing and Design Rule Check(DRC)](#day-5---routing-and-design-rule-checkdrc)  
 
+[Summary](#summary)
+
 [Acknowledgement](#acknowledgement)
 
 [References](#references)
