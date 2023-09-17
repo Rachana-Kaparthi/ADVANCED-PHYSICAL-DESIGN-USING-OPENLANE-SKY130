@@ -988,9 +988,22 @@ Setup Slack:
 <details>
   <summary>Routing and Design Rule Check(DRC)</summary>  
 
-  **Maze Routing and Lee Algorithm**  
+  **Maze Routing and Lee's Algorithm**   
+  Routing is the process of establishing a physical connection between two pins. Algorithms designed for routing take source and target pins and aim to find the most efficient path between them, ensuring a valid connection exists.
 
+The Maze Routing algorithm, such as the Lee algorithm, is one approach for solving routing problems. In this method, a grid similar to the one created during cell customization is utilized for routing purposes. The Lee algorithm starts with two designated points, the source and target, and leverages the routing grid to identify the shortest or optimal route between them.
 
+The algorithm assigns labels to neighboring grid cells around the source, incrementing them from 1 until it reaches the target (for instance, from 1 to 7). Various paths may emerge during this process, including L-shaped and zigzag-shaped routes. The Lee algorithm prioritizes selecting the best path, typically favoring L-shaped routes over zigzags. If no L-shaped paths are available, it may resort to zigzag routes. This approach is particularly valuable for global routing tasks.
+
+However, the Lee algorithm has limitations. It essentially constructs a maze and then numbers its cells from the source to the target. While effective for routing between two pins, it can be time-consuming when dealing with millions of pins. There are alternative algorithms that address similar routing challenges.  
+
+**Design Rule Check(DRC)**  
+
+DRC verifies whether a design meets the predefined process technology rules given by the foundry for its manufacturing. DRC checking is an essential part of the physical design flow and ensures the design meets manufacturing requirements and will not result in a chip failure. It defines the Quality of chip. They are so many DRCs, let us see few of them
+
+Design rules for physical wires
+
+Minimum width of the wire Minimum spacing between the wires Minimum pitch of the wire To solve signal short violation, we take the metal layer and put it on to upper metal layer. we check via rules Via width via spacing  
   
 </details>  
 <details>
