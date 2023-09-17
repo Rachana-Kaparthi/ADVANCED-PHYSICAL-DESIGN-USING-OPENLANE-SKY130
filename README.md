@@ -1076,7 +1076,17 @@ GDS Stands for Graphic Design Standard. This is the file that is sent to the fou
 
 In openLane use the command ```magic```
 
-The GDSII file is generated in the `results/signoff/magic` directory.
+The GDSII file is generated in the `results/signoff/magic` directory.  
+
+The design can be viewed on magic within results/routing directory. Run the follwing command in that directory:
+
+```
+magic -T /home/rachana/OpenLane/vsdstdcelldesign/sky130A.tech lef read ../../tmp/merged.max.lef def read picorv32a.def &
+
+```
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/final_magic.png)  
+
+
 </details>
 
 ## Summary
