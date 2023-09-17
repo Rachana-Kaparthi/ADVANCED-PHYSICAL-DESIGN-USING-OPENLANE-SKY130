@@ -1000,11 +1000,49 @@ Setup Slack:
 ```
 gen_pdn
 ```
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/gen_pdn_cmd.png)  
 
 We can confirm the success of PDN by checking the current def environment variable: ``` echo $::env(CURRENT_DEF) ```  
 
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/gen_pdn.png)  
 
+- gen_pdn - Generates the Power Distribution network
+- The power distribution network has to take the design_cts.def as the input def file.
+- This will create the grid and the straps for the Vdd and the ground. These are placed around the standard cells.
+- The standard cells are designed such that it's height is multiples of the space between the Vdd and the ground rails. Here, the pitch is 2.72. Only if the above conditions are adhered it is possible to power the standard cells.
+- The power to the chip, enters through the power pads. There is each for Vdd and Gnd
+- From the pads, the power enters the rings, through the via
+- The straps are connected to the ring. Vdd straps are connected to the Vdd ring and the Gnd Straps are connected to the Gnd ring. There are horizontal and the vertical straps
+- Now the power has to be supplied from the straps to the standard cells. The straps are connected to the rails of the standard cells
+- If macros are present then the straps attach to the rings of the macros via the macro pads and the pdn for the macro is pre-done.
+- There are definitions for the straps and the railss. In this design straps are at metal layer 4 and 5 and the standard cell rails are at the metal layer 1. Vias connect accross the layers as required.
+
+**Routing**  
+
+OpenLANE uses the TritonRoute tool for routing. There are 2 stages of routing:
+1. Global routing: Routing region is divided into rectangle grids which are represented as course 3D routes (Fastroute tool)
+2. Detailed routing: Finer grids and routing guides used to implement physical wiring (TritonRoute tool)
+
+Features of TritonRoute:
+1. Honouring pre-processed route guides
+2. Assumes that each net satisfies inter guide connectivity
+3. Uses MILP based panel routing scheme
+4. Intra-layer parallel and inter-layer sequential routing framework
+
+Running routing step in TritonRoute as part of openLANE flow:
+
+```
+run_routing
+```
+- run_routing - To start the routing
+- The options for routing can be set in the config.tcl file.
+- The optimisations in routing can also be done by specifying the routing strategy to use different version of TritonRoute Engine. There is a trade0ff between the optimised route and the runtime for routing.
+- For the default setting picorv32a takes approximately 30 minutesaccording to the current version of TritonRoute.
+- This routing stage must have the CURRENT_DEF set to pdn.def
+- The two stages of routing are performed by the following engines:
+  - Global Route : Fast Route
+  - Detailed Route : Triton Route
+- Fast Route generates the routing guides, whereas Triton Route uses the Global Route and then completes the routing with some strategies and optimisations for finding the best possible path connect the pins.
 </details>
 
 ## Acknowledgement   
