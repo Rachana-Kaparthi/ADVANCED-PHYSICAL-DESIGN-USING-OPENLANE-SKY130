@@ -910,7 +910,7 @@ set ::env(MAX_FANOUT_CONSTRAINT) 4
 ```
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/replace_cell.png)  
 
-Slack before performing CTS:  
+Slack during Post-Synthesis Timing Alaysis:  
 
 ![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/setup_hold_slack.png)    
 
