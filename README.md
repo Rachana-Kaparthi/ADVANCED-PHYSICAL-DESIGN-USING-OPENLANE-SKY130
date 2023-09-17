@@ -989,8 +989,22 @@ Setup Slack:
   <summary>Routing and Design Rule Check(DRC)</summary>  
 
   **Maze Routing and Lee Algorithm**  
+
+
   
-  
+</details>  
+<details>
+  <summary>Power Distribution Network Generation</summary>  
+  Unlike the general ASIC flow, Power Distribution Network generation is not a part of floorplan run in OpenLANE. PDN must be generated after CTS and post-CTS STA analyses:
+
+```
+gen_pdn
+```
+
+We can confirm the success of PDN by checking the current def environment variable: ``` echo $::env(CURRENT_DEF) ```  
+
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/gen_pdn.png)  
+
 </details>
 
 ## Acknowledgement   
