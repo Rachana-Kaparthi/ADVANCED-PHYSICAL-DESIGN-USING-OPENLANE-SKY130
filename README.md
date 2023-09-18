@@ -872,7 +872,10 @@ To check the layout invoke magic from the ```results/placement``` directory:
 
 ```
 magic -T /home/rachana/OpenLane/vsdstdcelldesign/sky130A.tech lef read ../../tmp/merged.max.lef def read picorv32a.def &
+
 ```
+![](https://github.com/Rachana-Kaparthi/ADVANCED-PHYSICAL-DESIGN-USING-OPENLANE-SKY130/blob/main/images/sky130_vsdinv.png)  
+
 
 **Delay Tables**  
 
