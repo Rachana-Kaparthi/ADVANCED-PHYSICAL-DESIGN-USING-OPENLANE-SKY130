@@ -976,7 +976,7 @@ write_db pico_cts.db
 read_db pico_cts.db
 read_verilog /home/rachana/OpenLane/designs/picorv32a/runs/RUN_2023.09.16_11.04.25/results/synthesis/picorv32a.v
 read_liberty $::env(LIB_SYNTH_COMPLETE)
-read_sdc /home/parallels/OpenLane/designs/picorv32a/src/my_base.sdc
+read_sdc /home/rachana/OpenLane/designs/picorv32a/src/my_base.sdc
 set_propagated_clock (all_clocks)
 report_checks -path_delay min_max -format full_clock_expanded -digits 4
 ```
