@@ -1127,6 +1127,7 @@ run_synthesis
 run_floorplan
 run_placement
 run_cts
+gen_pdn
 run_routing
 run_magic
 run_magic_spice_export
